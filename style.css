@@ -208,8 +208,8 @@ img {
     .item__info {
         width: 85%;
         height: 100%;
-        font-size: 12px;
-        background-color: #181D3199;
+        font-size: 15px;
+        background-color: #181D3130;
         border-radius: 0 0 8px 8px;
         padding: 5px 12px 12px 12px;
         margin-top: 0;
@@ -217,7 +217,7 @@ img {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        color: #F0E9D2;
+        color: #181D31;
     }
 
     .item__info h4 {
@@ -228,17 +228,17 @@ img {
     }
 
     .item__info p {
-        line-height: 1.2;
+        line-height: 1;
         margin: 10px 0;
-        font-weight: 200;
+        font-weight: 400;
     }
 
     .item__info button {
         width: 100%;
-        border: solid 1px #F0E9D2;
+        border: solid 1px #181D31;
         padding: 5px;
         border-radius: 5px;
-        color: #F0E9D2;
+        color: #181D31;
         background-color: transparent;
         font-size: 10px;
         bottom: auto;
@@ -269,6 +269,10 @@ img {
         background-color: #F0E9D210;
         padding: 10px;
         border-radius: 10px;
+    }
+
+    .exc-item h4 {
+        margin-bottom: 5px;
     }
 
     .exc-item img {
