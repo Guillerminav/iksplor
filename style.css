@@ -83,20 +83,197 @@ main h1 {
     0px 18px 23px rgba(0,0,0,0.1);
 }
 
+    /* EXCURSIONES -----------------------------*/
 
-/* EXCURSIONES -----------------------------*/
+    article {
+        width: 100%;
+        height: 100%;
+        padding: 100px auto;
+        color: #181D31;
+        margin: auto;
+    }
 
-article {
-    width: 100%;
-    height: 100vh;
-    background-color: #576F72;
-}
+    section {
+        width: 100%;
+        height: 100%;
+        background-color: #F0E9D2;
+        padding: 100px auto;
+        color: #181D31;
+        padding-bottom: 30px;
+        margin: auto;
+    }
+
+    article h3 {
+        padding: 40px 60px;
+        padding-bottom: 0;
+        font-size: 35px;
+        font-weight: 500;
+    }
 
 
-img {
-    width: 50px;
-    height: 50px;
-}
+    .imagen {
+        box-shadow: 0 1px 30px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.20);
+        border-radius: 8px;
+        z-index: 100;
+    }
+
+    img {
+        width: 100%;
+        height: 100%;
+        max-height: 250px;
+        border-radius: 8px;
+        margin: auto;
+        display: block;
+    }
+
+    .destinos {
+        width: 90%;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        margin: 20px auto;
+        grid-gap: 35px;
+    }
+
+    .destino__item {
+        display: flex;
+        flex-direction: column;
+        margin: 5px auto;
+    }
+
+    .item__info {
+        width: 85%;
+        height: 100%;
+        font-size: 20px;
+        background-color: #181D3130;
+        border-radius: 0 0 8px 8px;
+        padding: 5px 12px 12px 12px;
+        margin-top: 0;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        color: #181D31;
+    }
+
+    .item__info h4 {
+        font-size: 18px;
+        z-index: 10;
+        line-height: 1;
+        padding-top: 8px;
+    }
+
+    .item__info p {
+        line-height: 1;
+        margin: 10px 0;
+        font-weight: 400;
+    }
+
+    .item__info button {
+        width: 100%;
+        border: solid 1px #181D31;
+        padding: 5px;
+        border-radius: 5px;
+        color: #181D31;
+        background-color: transparent;
+        font-size: 15px;
+        bottom: auto;
+    }
+
+/* EXCURSIONES --------------------------------*/
+
+    .excursiones__container {
+        margin: auto;
+        background-color: #181D31;
+        color: #F0E9D2;
+        padding-bottom: 20px;
+    }
+
+    .excursiones__container h3 {
+        padding: 40px 60px;
+        padding-bottom: 0;
+        font-size: 35px;
+        font-weight: 400;
+    }
+
+    .exc-item {
+        display: flex;
+        width: 90%;
+        margin: 50px auto;
+        gap: 50px;
+        font-weight: 200;
+        background-color: #F0E9D210;
+        padding: 30px;
+        border-radius: 10px;
+    }
+
+    .exc-item h4 {
+        font-size: 25px;
+    }
+
+    .exc-item img {
+        width: 100%;
+        height: 100%;
+        max-width: 400px;
+        right: auto;
+    }
+
+    .exc-info {
+        flex-grow: 5;
+        font-size: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .reservar {
+        padding: 10px;
+        background-color: #F0E9D2;
+        color: #181D31;
+        font-family: 'Jost', sans-serif;
+        font-size: 18px;
+        border-radius: 10px;
+        max-width: 200px;
+        min-width: 150px;
+        margin-left: auto;
+        transition: 0.5s;
+        border: solid 1px transparent;
+    }
+
+    .reservar:hover {
+        cursor: pointer;
+        background-color: #181D31;
+        border: solid 1px #F0E9D2;
+        color: #F0E9D2;
+    }
+
+
+    /* FOOTER ----------------------*/
+
+    footer {
+        background-color: #F0E9D2;
+        height: 200px;
+        color: #181D31;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 30px;
+    }
+
+    .redes {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .redes a {
+        color: #181D31;
+        font-size: 40px;
+    }
+
+    footer p {
+        font-size: 20px;
+    }
 
 
 @media screen and (max-width: 600px) {
@@ -288,11 +465,40 @@ img {
 
     .exc-item h4 {
         margin-bottom: 5px;
+        font-size: 15px;
     }
 
     .exc-item img {
         width: 200px;
         height: 100px;
+    }
+    .exc-info {
+        font-size: 15px;
+        line-height: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .reservar {
+        padding: 0;
+        background-color: #F0E9D2;
+        color: #181D31;
+        font-family: 'Jost', sans-serif;
+        font-size: 12px;
+        border-radius: 6px;
+        margin-top: 10px;
+        width: 100%;
+        margin-left: auto;
+        transition: 0.5s;
+        border: solid 1px transparent;
+    }
+
+    .reservar:hover {
+        cursor: pointer;
+        background-color: #181D31;
+        border: solid 1px #F0E9D2;
+        color: #F0E9D2;
     }
 
 
